@@ -1,38 +1,119 @@
-.App {
+/* Import a playful font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap');
+
+body {
+  font-family: 'Raleway', sans-serif; /* Change font to Raleway */
+  margin: 0;
+  padding: 0;
+  background-image: url('https://i.pinimg.com/736x/07/24/df/0724df082ec58482650a606cd571c295.jpg'); /* Background image */
+  background-size: cover; /* Cover the entire screen */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repeating */
+}
+
+header {
+  background: linear-gradient(135deg, rgba(255, 166, 177, 0.9), rgba(255, 216, 129, 0.9)); /* Soft pink to light yellow gradient */
+  color: #fff;
+  padding: 20px 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav ul {
+  list-style: none;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+nav ul li {
+  display: inline;
+  margin: 0 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600; /* Bold text */
 }
 
-.App-link {
-  color: #61dafb;
+section {
+  padding: 20px;
+  margin: 10px auto;
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+  border-radius: 15px; /* More rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Softer shadow */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.shrine-slide {
+  display: flex; /* Use flexbox for centering */
+  flex-direction: column; /* Stack the content vertically */
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+  height: 100%; /* Make sure it takes full height of the slide */
+  text-align: center; /* Center text */
+  padding: 20px; /* Add some padding */
+  background-color: rgba(255, 230, 230, 0.9); /* Light pink background with transparency for slides */
+  border-radius: 15px; /* More rounded corners */
+  margin: 10px; /* Space between slides */
+}
+
+.shrine-slide img {
+  width: 100%;
+  height: auto;
+  max-width: 600px; /* Limit max width for better centering */
+  border-radius: 8px;
+  margin-bottom: 10px; /* Space between image and text */
+}
+
+.shrine-slide h3 {
+  margin: 10px 0; /* Add some spacing */
+  color: #ff6f61; /* Color for the shrine names */
+  font-size: 1.8em; /* Increase font size for visibility */
+}
+
+.shrine-slide p {
+  margin: 0; /* Reset default margin */
+  color: #333; /* Darker text color for readability */
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background: rgba(255, 166, 177, 0.9); /* Matching footer background */
+  color: #fff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.slick-list {
+  margin: 0 auto; /* Center the list */
+  padding: 0; /* Remove any padding */
+  overflow: hidden; /* Hide any overflow */
+  max-width: 800px; /* Limit width for better appearance */
+}
+
+.slick-slider {
+  display: flex; 
+  justify-content: center; /* Center the slides */
+  align-items: center; /* Center items vertically */
+}
+
+.slick-slide {
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  margin: 0 10px; /* Adjust margin as needed */
+}
+
+.slick-dots {
+  bottom: -30px;
+  text-align: center; /* Center the dots */
+}
+
+.slick-dots li button:before {
+  color: #ff6f61; /* Color for the dots */
+}
+
+.slick-dots li.slick-active button:before {
+  color: #ff8e53; /* Color for active dot */
 }
