@@ -28,7 +28,7 @@ const Header = () => {
       <nav>
         <ul>
           <li><a href="#about">About</a></li>
-          <li><a href="#shrines">Shrines</a></li>
+          <li><a href="#shrines">Hobbies</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -60,7 +60,7 @@ const ShrineSlider = () => {
 
   const shrines = [
     {
-      name: "Web Design ",
+      name: "Web Design",
       image: "https://media.licdn.com/dms/image/D5612AQFp86gholx6fw/article-cover_image-shrink_720_1280/0/1708422990591?e=2147483647&v=beta&t=6rUer-Xo3IAqK2KIOVR9Z7pAH7TWxAQCp56FghCqKWM",
       description: "I enjoy exploring web design and development through various technologies like HTML, CSS, JavaScript, and React. Creating interactive and visually appealing websites allows me to express my creativity while honing my technical skills. I love experimenting with responsive design and user experience principles, always seeking to enhance my knowledge and stay updated with industry trends. Each project is an opportunity to blend aesthetics with functionality, making web design a rewarding passion of mine.",
     },
@@ -72,7 +72,7 @@ const ShrineSlider = () => {
     {
       name: "Listening to music",
       image: "https://pannkpop.com/wp-content/uploads/2024/06/Compare-the-achievements-of-NewJeans-IVE-Aespa-and-LE-SSERAFIM-on-Melon-1.jpg",
-      description: "I Love listening to music, all day long.  Lately i've been introduced to a genre called K-pop and it's not as bad as i thought it would be.  My favorite groups are Aespa, New Jeans, and Le Sserafim, their pictures are displayed above :).",
+      description: "I love listening to music all day long. Lately, I've been introduced to a genre called K-pop, and it's not as bad as I thought it would be. My favorite groups are Aespa, New Jeans, and Le Sserafim, whose pictures are displayed above :).",
     },
   ];
 
